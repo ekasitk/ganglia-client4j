@@ -112,7 +112,7 @@ public class HOSTS {
         StringBuffer buf = new StringBuffer("<HOSTS ");
         buf.append("UP=\"" + getUP() + "\" ");
         buf.append("DOWN=\"" + getDOWN() + "\" ");
-        buf.append("SOURCE=\"" + getSOURCE() + "\"/>");
+        buf.append("SOURCE=\"" + getSOURCE() + "\"/>\n");
         return buf.toString();
     }
 }

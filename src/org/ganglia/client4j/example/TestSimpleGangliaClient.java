@@ -7,7 +7,12 @@ public class TestSimpleGangliaClient {
       String GANGLIA_GMETAD_HOST = "localhost";
       String CLUSTER_NAME = "spark-paas-dev";
 
-      ClusterStatus clusterStatus = SimpleGangliaClient.getClusterStatus(GANGLIA_GMETAD_HOST,CLUSTER_NAME);
+      System.out.println("Testing non-interactive port");
+      ClusterStatus clusterStatus = SimpleGangliaClient.getClusterStatus(GANGLIA_GMETAD_HOST);
+      System.out.println(clusterStatus);
+   
+      System.out.println("Testing interactive port");
+      clusterStatus = SimpleGangliaClient.getClusterStatus(GANGLIA_GMETAD_HOST,CLUSTER_NAME);
       System.out.println(clusterStatus);
 
    }

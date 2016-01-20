@@ -1,0 +1,4 @@
+The initial java code for parsing xml has been generated from DTD by the following command:
+
+$mkdir src
+$xjc -dtd -d src -p org.ganglia.client4j.internal ganglia.dtd

@@ -1,4 +1,10 @@
-The initial java code for parsing xml has been generated from DTD by the following command:
+To compile:
+mvn compile
 
-$mkdir src
-$xjc -dtd -d src -p org.ganglia.client4j.internal ganglia.dtd
+To create jar:
+mvn package
+
+Note that the initial java code for parsing xml has been generated from DTD by the following command:
+
+$mkdir -p src/main/java
+$xjc -dtd -d src/main/java -p org.ganglia.client4j.internal ganglia.dtd
